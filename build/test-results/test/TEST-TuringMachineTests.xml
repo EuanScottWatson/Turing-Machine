@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TuringMachineTests" tests="10" skipped="0" failures="0" errors="0" timestamp="2021-12-20T18:40:39" hostname="DESKTOP-1F71LEF" time="0.045">
+  <properties/>
+  <testcase name="threeState" classname="TuringMachineTests" time="0.011"/>
+  <testcase name="testBinaryIncrementCarry" classname="TuringMachineTests" time="0.002"/>
+  <testcase name="testThreeEqualLengthsNotTrue" classname="TuringMachineTests" time="0.001"/>
+  <testcase name="testThreeEqualLengthsLong" classname="TuringMachineTests" time="0.001"/>
+  <testcase name="testBinaryIncrementNormal" classname="TuringMachineTests" time="0.0"/>
+  <testcase name="fourState" classname="TuringMachineTests" time="0.028"/>
+  <testcase name="testThreeEqualLengthsNormal" classname="TuringMachineTests" time="0.0"/>
+  <testcase name="testDivisibleByThreeNormal" classname="TuringMachineTests" time="0.001"/>
+  <testcase name="testDivisibleByThreeNotDivisible" classname="TuringMachineTests" time="0.0"/>
+  <testcase name="testDivisibleByThreeLong" classname="TuringMachineTests" time="0.0"/>
+  <system-out><![CDATA[010000
+  B
+Step: 0	Ones: 1
+010000
+   C
+Step: 1	Ones: 1
+010100
+  C
+Step: 2	Ones: 2
+011100
+ C
+Step: 3	Ones: 3
+011100
+A
+Step: 4	Ones: 3
+111100
+ B
+Step: 5	Ones: 4
+111100
+  B
+Step: 6	Ones: 4
+111100
+   B
+Step: 7	Ones: 4
+111100
+    B
+Step: 8	Ones: 4
+111100
+     C
+Step: 9	Ones: 4
+111101
+    C
+Step: 10	Ones: 5
+111111
+   C
+Step: 11	Ones: 6
+111111
+  A
+Step: 12	Ones: 6
+111111
+   H
+Step: 13	Ones: 6
+Output to the 3-state busy beaver is 111111
+	It contains 6 1s
+11111 + 1 = 100000 
+Failure
+aabbccc does not have equal length characters
+aaaaabbbbbccccc has equal length characters
+1001 + 1 = 1010 
+00000000001000
+           B
+Step: 0	Ones: 1
+00000000001100
+          A
+Step: 1	Ones: 2
+00000000001100
+         B
+Step: 2	Ones: 2
+00000000011100
+        A
+Step: 3	Ones: 3
+00000000111100
+         B
+Step: 4	Ones: 4
+00000000101100
+        C
+Step: 5	Ones: 3
+00000000101100
+       D
+Step: 6	Ones: 3
+00000001101100
+        D
+Step: 7	Ones: 4
+00000001001100
+         A
+Step: 8	Ones: 3
+00000001011100
+          B
+Step: 9	Ones: 4
+00000001010100
+         C
+Step: 10	Ones: 3
+00000001010100
+        D
+Step: 11	Ones: 3
+00000001110100
+         D
+Step: 12	Ones: 4
+00000001100100
+          A
+Step: 13	Ones: 3
+00000001101100
+           B
+Step: 14	Ones: 4
+00000001101000
+          C
+Step: 15	Ones: 3
+00000001101000
+         D
+Step: 16	Ones: 3
+00000001111000
+          D
+Step: 17	Ones: 4
+00000001110000
+           A
+Step: 18	Ones: 3
+00000001110100
+            B
+Step: 19	Ones: 4
+00000001110110
+           A
+Step: 20	Ones: 5
+00000001110110
+          B
+Step: 21	Ones: 5
+00000001111110
+         A
+Step: 22	Ones: 6
+00000001111110
+        B
+Step: 23	Ones: 6
+00000001011110
+       C
+Step: 24	Ones: 5
+00000001011110
+      D
+Step: 25	Ones: 5
+00000011011110
+       D
+Step: 26	Ones: 6
+00000010011110
+        A
+Step: 27	Ones: 5
+00000010111110
+         B
+Step: 28	Ones: 6
+00000010101110
+        C
+Step: 29	Ones: 5
+00000010101110
+       D
+Step: 30	Ones: 5
+00000011101110
+        D
+Step: 31	Ones: 6
+00000011001110
+         A
+Step: 32	Ones: 5
+00000011011110
+          B
+Step: 33	Ones: 6
+00000011010110
+         C
+Step: 34	Ones: 5
+00000011010110
+        D
+Step: 35	Ones: 5
+00000011110110
+         D
+Step: 36	Ones: 6
+00000011100110
+          A
+Step: 37	Ones: 5
+00000011101110
+           B
+Step: 38	Ones: 6
+00000011101010
+          C
+Step: 39	Ones: 5
+00000011101010
+         D
+Step: 40	Ones: 5
+00000011111010
+          D
+Step: 41	Ones: 6
+00000011110010
+           A
+Step: 42	Ones: 5
+00000011110110
+            B
+Step: 43	Ones: 6
+00000011110100
+           C
+Step: 44	Ones: 5
+00000011110100
+          D
+Step: 45	Ones: 5
+00000011111100
+           D
+Step: 46	Ones: 6
+00000011111000
+            A
+Step: 47	Ones: 5
+00000011111010
+             B
+Step: 48	Ones: 6
+00000011111011
+            A
+Step: 49	Ones: 7
+00000011111011
+           B
+Step: 50	Ones: 7
+00000011111111
+          A
+Step: 51	Ones: 8
+00000011111111
+         B
+Step: 52	Ones: 8
+00000011101111
+        C
+Step: 53	Ones: 7
+00000011101111
+       D
+Step: 54	Ones: 7
+00000010101111
+        A
+Step: 55	Ones: 6
+00000010101111
+       B
+Step: 56	Ones: 6
+00000011101111
+      A
+Step: 57	Ones: 7
+00000011101111
+     B
+Step: 58	Ones: 7
+00000111101111
+    A
+Step: 59	Ones: 8
+00001111101111
+     B
+Step: 60	Ones: 9
+00001011101111
+    C
+Step: 61	Ones: 8
+00001011101111
+   D
+Step: 62	Ones: 8
+00011011101111
+    D
+Step: 63	Ones: 9
+00010011101111
+     A
+Step: 64	Ones: 8
+00010111101111
+      B
+Step: 65	Ones: 9
+00010101101111
+     C
+Step: 66	Ones: 8
+00010101101111
+    D
+Step: 67	Ones: 8
+00011101101111
+     D
+Step: 68	Ones: 9
+00011001101111
+      A
+Step: 69	Ones: 8
+00011011101111
+       B
+Step: 70	Ones: 9
+00011010101111
+      C
+Step: 71	Ones: 8
+00011010101111
+     D
+Step: 72	Ones: 8
+00011110101111
+      D
+Step: 73	Ones: 9
+00011100101111
+       A
+Step: 74	Ones: 8
+00011101101111
+        B
+Step: 75	Ones: 9
+00011101001111
+       C
+Step: 76	Ones: 8
+00011101001111
+      D
+Step: 77	Ones: 8
+00011111001111
+       D
+Step: 78	Ones: 9
+00011110001111
+        A
+Step: 79	Ones: 8
+00011110101111
+         B
+Step: 80	Ones: 9
+00011110111111
+        A
+Step: 81	Ones: 10
+00011110111111
+       B
+Step: 82	Ones: 10
+00011111111111
+      A
+Step: 83	Ones: 11
+00011111111111
+     B
+Step: 84	Ones: 11
+00011011111111
+    C
+Step: 85	Ones: 10
+00011011111111
+   D
+Step: 86	Ones: 10
+00001011111111
+    A
+Step: 87	Ones: 9
+00001011111111
+   B
+Step: 88	Ones: 9
+00011011111111
+  A
+Step: 89	Ones: 10
+00111011111111
+   B
+Step: 90	Ones: 11
+00101011111111
+  C
+Step: 91	Ones: 10
+00101011111111
+ D
+Step: 92	Ones: 10
+01101011111111
+  D
+Step: 93	Ones: 11
+01001011111111
+   A
+Step: 94	Ones: 10
+01011011111111
+    B
+Step: 95	Ones: 11
+01010011111111
+   C
+Step: 96	Ones: 10
+01010011111111
+  D
+Step: 97	Ones: 10
+01110011111111
+   D
+Step: 98	Ones: 11
+01100011111111
+    A
+Step: 99	Ones: 10
+01101011111111
+     B
+Step: 100	Ones: 11
+01101111111111
+    A
+Step: 101	Ones: 12
+01101111111111
+   B
+Step: 102	Ones: 12
+01111111111111
+  A
+Step: 103	Ones: 13
+01111111111111
+ B
+Step: 104	Ones: 13
+00111111111111
+C
+Step: 105	Ones: 12
+10111111111111
+ H
+Step: 106	Ones: 13
+Output to the 4-state busy beaver is 10111111111111
+	It contains 13 1s
+abc has equal length characters
+1111 mod 3 == 0
+Failure
+1011 mod 3 != 0
+1000000001 mod 3 == 0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

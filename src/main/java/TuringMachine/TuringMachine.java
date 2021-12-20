@@ -23,14 +23,6 @@ public class TuringMachine {
     return s;
   }
 
-  public String getCurrentState() {
-    return currentState;
-  }
-
-  public int getPos() {
-    return pos;
-  }
-
   public TuringMachine(String s, Map<Entry, Value> f, String currentState, String endState,
       int initialPos) {
     this.s = s;
@@ -111,7 +103,7 @@ public class TuringMachine {
 //    new DivisibleByThree("1111").runExample();
 //    new ThreeEqualLengths("aaaabbbbcccc").runExample();
 //    new ThreeStateBusyBeaver().runExample(true);
-    new FourStateBusyBeaver().runExample();
+//    new FourStateBusyBeaver().runExample();
   }
 
 }

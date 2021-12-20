@@ -1,8 +1,4 @@
-import Examples.BinaryIncrement;
-import Examples.DivisibleByThree;
-import Examples.FourStateBusyBeaver;
-import Examples.ThreeEqualLengths;
-import Examples.ThreeStateBusyBeaver;
+import Examples.*;
 import org.junit.Test;
 
 public class TuringMachineTests {

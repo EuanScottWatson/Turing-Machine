@@ -6,11 +6,8 @@ import TuringMachine.Direction;
 import TuringMachine.Entry;
 import TuringMachine.TuringMachine;
 import TuringMachine.Value;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Stream;
 
 public class FourStateBusyBeaver {
 

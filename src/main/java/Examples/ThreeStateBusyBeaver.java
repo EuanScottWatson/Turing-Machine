@@ -31,9 +31,9 @@ public class ThreeStateBusyBeaver {
   }
 
   public static int numberOfOnes(String output) {
-    int occurences = output.replaceAll("0", "").length();
-    System.out.format("\tIt contains %d 1s\n", occurences);
-    return occurences;
+    int occurrences = output.replaceAll("0", "").length();
+    System.out.format("\tIt contains %d 1s\n", occurrences);
+    return occurrences;
   }
 
   public int runExample() {
