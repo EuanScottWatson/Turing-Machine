@@ -40,11 +40,8 @@ public class FourStateBusyBeaver {
   }
 
   public int runExample() {
-    return runExample(false);
-  }
+    M.runBeaver();
 
-  public int runExample(boolean detailed) {
-    M.run(detailed);
     String output = M.getS();
     System.out.format("Output to the 4-state busy beaver is %s\n", output);
     return numberOfOnes(output);

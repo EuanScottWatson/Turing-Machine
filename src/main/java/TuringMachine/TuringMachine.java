@@ -1,11 +1,6 @@
 package TuringMachine;
 
-import Examples.BinaryIncrement;
-import Examples.DivisibleByThree;
-import Examples.FourStateBusyBeaver;
-import Examples.ThreeEqualLengths;
-import Examples.ThreeStateBusyBeaver;
-import java.util.HashMap;
+import Examples.*;
 import java.util.Map;
 
 public class TuringMachine {
@@ -20,6 +15,7 @@ public class TuringMachine {
   String s;
   Map<Entry, Value> f;
   int pos; // The position of the head
+
   String currentState;
   String endState;
 
@@ -27,7 +23,16 @@ public class TuringMachine {
     return s;
   }
 
-  public TuringMachine(String s, Map<Entry, Value> f, String currentState, String endState, int initialPos) {
+  public String getCurrentState() {
+    return currentState;
+  }
+
+  public int getPos() {
+    return pos;
+  }
+
+  public TuringMachine(String s, Map<Entry, Value> f, String currentState, String endState,
+      int initialPos) {
     this.s = s;
     this.f = f;
     this.currentState = currentState;
@@ -60,6 +65,19 @@ public class TuringMachine {
     return true;
   }
 
+  public void runBeaver() {
+    int step = 0;
+    while (!currentState.equals("H")) {
+      step();
+
+      String space = new String(new char[Math.max(0, pos)]).replace("\0", " ");
+      System.out.println(s);
+      System.out.println(space + currentState);
+      System.out.format("Step: %d\tOnes: %d\n", step, s.replaceAll("0", "").length());
+      step++;
+    }
+  }
+
   public boolean step() {
     char symbolUnderHead = ' ';
     if (pos > -1 && pos != s.length()) {
@@ -68,11 +86,13 @@ public class TuringMachine {
     Entry e = new Entry(currentState, symbolUnderHead);
     Value v = f.get(e);
 
-    if (v == null) return false;
+    if (v == null) {
+      return false;
+    }
 
     String newS = s.substring(0, Math.max(0, Math.min(pos, s.length()))) + v.newSymbol;
     if (pos < s.length()) {
-      newS += s.substring(pos+1);
+      newS += s.substring(pos + 1);
     }
     s = newS;
 
@@ -87,10 +107,10 @@ public class TuringMachine {
   }
 
   public static void main(String[] args) {
-    new BinaryIncrement("10011").runExample();
-    new DivisibleByThree("1111").runExample();
-    new ThreeEqualLengths("aaaabbbbcccc").runExample();
-    new ThreeStateBusyBeaver().runExample();
+//    new BinaryIncrement("10011").runExample();
+//    new DivisibleByThree("1111").runExample();
+//    new ThreeEqualLengths("aaaabbbbcccc").runExample();
+//    new ThreeStateBusyBeaver().runExample(true);
     new FourStateBusyBeaver().runExample();
   }
 
