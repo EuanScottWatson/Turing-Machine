@@ -1,3 +1,5 @@
+package TuringMachine;
+
 import java.util.Objects;
 
 public class Value {
@@ -33,7 +35,7 @@ public class Value {
 
   @Override
   public String toString() {
-    return "Value{" +
+    return "TuringMachine.Value{" +
         "newState='" + newState + '\'' +
         ", newSymbol=" + newSymbol +
         ", direction=" + direction +

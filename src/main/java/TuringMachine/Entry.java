@@ -1,3 +1,5 @@
+package TuringMachine;
+
 import java.util.Objects;
 
 public class Entry {
@@ -30,7 +32,7 @@ public class Entry {
 
   @Override
   public String toString() {
-    return "Entry{" +
+    return "TuringMachine.Entry{" +
         "state='" + state + '\'' +
         ", symbol=" + symbol +
         '}';
