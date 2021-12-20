@@ -39,15 +39,15 @@ public class FourStateBusyBeaver {
     M = new TuringMachine(s, f, "A", "H", 10);
   }
 
-  public void runExample() {
-    runExample(false);
+  public int runExample() {
+    return runExample(false);
   }
 
-  public void runExample(boolean detailed) {
+  public int runExample(boolean detailed) {
     M.run(detailed);
     String output = M.getS();
     System.out.format("Output to the 4-state busy beaver is %s\n", output);
-    numberOfOnes(output);
+    return numberOfOnes(output);
   }
 
 }

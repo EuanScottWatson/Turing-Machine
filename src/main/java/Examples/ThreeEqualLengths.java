@@ -40,16 +40,18 @@ public class ThreeEqualLengths {
     M = new TuringMachine(s, f, "qA", "accept");
   }
 
-  public void runExample() {
-    runExample(false);
+  public boolean runExample() {
+    return runExample(false);
   }
 
-  public void runExample(boolean detailed) {
+  public boolean runExample(boolean detailed) {
 
     if (M.run(detailed)) {
       System.out.format("%s has equal length characters\n", s);
+      return true;
     } else {
       System.out.format("%s does not have equal length characters\n", s);
+      return false;
     }
   }
 

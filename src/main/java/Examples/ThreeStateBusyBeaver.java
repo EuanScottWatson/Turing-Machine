@@ -30,20 +30,21 @@ public class ThreeStateBusyBeaver {
     M = new TuringMachine(s, f, "A", "H", 1);
   }
 
-  public static void numberOfOnes(String output) {
+  public static int numberOfOnes(String output) {
     int occurences = output.replaceAll("0", "").length();
     System.out.format("\tIt contains %d 1s\n", occurences);
+    return occurences;
   }
 
-  public void runExample() {
-    runExample(false);
+  public int runExample() {
+    return runExample(false);
   }
 
-  public void runExample(boolean detailed) {
+  public int runExample(boolean detailed) {
     M.run(detailed);
     String output = M.getS();
     System.out.format("Output to the 3-state busy beaver is %s\n", output);
-    numberOfOnes(output);
+    return numberOfOnes(output);
   }
 
 }

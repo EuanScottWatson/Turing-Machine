@@ -29,15 +29,17 @@ public class DivisibleByThree {
     M = new TuringMachine(b, f, "q0", "accept");
   }
 
-  public void runExample() {
-    runExample(false);
+  public boolean runExample() {
+    return runExample(false);
   }
 
-  public void runExample(boolean detailed) {
+  public boolean runExample(boolean detailed) {
     if (M.run(detailed)) {
       System.out.format("%s mod 3 == 0\n", b);
+      return true;
     } else {
       System.out.format("%s mod 3 != 0\n", b);
+      return false;
     }
   }
 

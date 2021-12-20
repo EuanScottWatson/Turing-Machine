@@ -22,7 +22,10 @@ public class BinaryIncrement {
 
     this.b = b;
     M = new TuringMachine(b, f, "right", "done");
+  }
 
+  public String getS() {
+    return M.getS();
   }
 
   public void runExample() {
